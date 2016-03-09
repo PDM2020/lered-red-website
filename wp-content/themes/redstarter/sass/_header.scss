@@ -1,0 +1,74 @@
+/*--------------------------------------------------------------
+# header logo social media
+--------------------------------------------------------------*/
+.top-border {
+  background-color:#fafafa;
+  border-bottom:1px solid #e1e1e1;
+  height:40px;
+  width:100%
+}
+
+.fixed-width-container {
+  width:1024px;
+  margin:0 auto;
+}
+
+.logo-social {
+    display:flex;
+    justify-content:space-between;
+}
+
+.site-branding img {
+  width:300px;
+}
+
+.site-branding {
+  display: flex;
+  padding-top:30px;
+  padding-bottom:30px;
+}
+
+
+.nav-search {
+  margin:0;
+  float:right;
+}
+
+input[type="search"], input[type="submit"] {
+  position:relative;
+ border:none;
+ background-color:transparent;
+ padding-top:10px;
+ outline:none;
+
+}
+
+.fa {
+  margin:0;
+  font-size:1.3rem;
+  padding-left: 20px;
+  color: #a1a1a1;
+}
+
+button, .search-submit {
+  border:none;
+  position:relative;
+  background-color: transparent;
+  width:20px;
+}
+
+.fa-search {
+  margin:0;
+  position:relative;
+  right:27px;
+
+}
+
+.social ul {
+    margin:0;
+    list-style:none;
+}
+
+.social {
+    align-self:center;
+}

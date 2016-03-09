@@ -2,11 +2,49 @@
 # Content
 --------------------------------------------------------------*/
 
+
+// about us page-links
+
+.align-title-center {
+text-align:center;
+
+}
+.span-two-col {
+		display:flex;
+		justify-content:space-between;
+}
+.left-col {
+	flex-wrap: wrap;
+		display:flex;
+		flex:0 1 45%;
+}
+.right-col {
+	flex-wrap: wrap;
+		display:flex;
+		flex:0 1 45%;
+}
+
 /* Posts and pages */
 
-.entry-title, .entry-meta {
+body:not(.home) .site-content {
+	display:flex;
+	flex:1 0 61%;
+	padding-right:5%;
 	width:1024px;
 	margin:0 auto;
+}
+
+.widget-area {
+	border-left: solid 1px #e1e1e1;
+	display:flex;
+	flex:1 0 27%;
+	padding-left: 5%;
+}
+
+
+
+.entry-title, .entry-meta {
+
 }
 
 .sticky {
@@ -35,11 +73,8 @@
 .page-content p,
 .entry-content,
 .entry-summary, p {
-	width:1024px;
-	margin: 0 auto;
-
+	color:#222;
 }
-
 
 .page-links {
 	clear: both;
@@ -58,6 +93,7 @@
 .comment-content a {
 	word-wrap: break-word;
 }
+
 .bypostauthor {
 	display: block;
 }

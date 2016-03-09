@@ -6,6 +6,7 @@
  */
 
 ?>
+<!--content single-->
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
@@ -19,7 +20,7 @@
 			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
-
+<!--content single-->
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php

@@ -1,0 +1,46 @@
+
+.hero-image {
+    background: url("../images/hero-bread.jpg") center top no-repeat #FFFFFF;
+    background-size: cover;
+      height: 550px;
+}
+
+.tag-line {
+  padding-top:235px;
+  text-transform:uppercase;
+  text-align:center;
+  font-size: 7em;
+    font-weight: 700;
+  color: #fff;
+  font-family: 'Overlock',sans-serif;
+  text-shadow: 1px 1px 2px #333;
+}
+
+.lrd-categories {
+  align-items:flex-end;
+  display:flex;
+}
+
+.lrd-cat-loop {
+  align-items:center;
+  flex-direction:column;
+  padding: 20px;
+  display:flex;
+  flex: 1 0 25%;
+}
+
+.left-image, .right-image, .right-inside-image, .left-inside-image {
+  padding: 0 20px 20px 20px;
+  flex: 1 0 25%;
+}
+
+h3, .left-image, h3, .right-image, h3, .right-inside-image, h3, .left-inside-image {
+  text-align:center;
+  color:#222;
+}
+
+.category-images p {
+  text-align:left;
+  color: #222222;
+  line-height:1.3;
+}
