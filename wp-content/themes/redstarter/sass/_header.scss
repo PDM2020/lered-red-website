@@ -1,6 +1,12 @@
 /*--------------------------------------------------------------
 # header logo social media
 --------------------------------------------------------------*/
+.nav-wrapper {
+		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+		border-top: #e1e1e1 solid 1px;
+	  display:flex;
+}
+
 .top-border {
   background-color:#fafafa;
   border-bottom:1px solid #e1e1e1;
