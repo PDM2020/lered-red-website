@@ -1,4 +1,4 @@
-<?php
+s<?php
 /**
  * The template for displaying all pages.
  *
@@ -19,7 +19,7 @@ get_header(); ?>
 			<?php if( ! empty($terms) ) : ?>
 <div class="lrd-categories fixed-width-container" >
 					<?php foreach ($terms as $term) : ?>
-						
+
 											<div class="lrd-cat-loop">
 											<img src="<?php echo get_template_directory_uri() . '/images\/' . $term->slug; ?>.png" alt=""/>
 											<h3><?php echo $term ->name; ?></h3>

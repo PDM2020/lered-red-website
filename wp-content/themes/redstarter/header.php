@@ -27,7 +27,7 @@
 				<div class="site-branding">
 					<div class="logo-social fixed-width-container">
 					<a href="http://red-bread.dev/" rel="home">
-						<img src="/wp-content/themes/redstarter/images/lrb-logo.svg"alt="Le Red Bread logo"></a>
+						<img src="<?php bloginfo('template_directory'); ?>/images/lrb-logo.svg"alt="Le Red Bread logo"></a>
 							<div class="social">
 								<ul>
 									<li>
@@ -58,4 +58,3 @@
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
-			

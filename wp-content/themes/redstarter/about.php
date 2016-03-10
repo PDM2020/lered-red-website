@@ -18,12 +18,12 @@ get_header(); ?>
 						<div class="span-two-col fixed-width-container">
 
 						<div class="left-col">
-							<img src="/wp-content/themes/redstarter/images/team.jpg" height=480px width=480px alt="Le Red Bread Team" />
+							<img src="<?php bloginfo('template_directory'); ?>/images/team.jpg" height=480px width=480px alt="Le Red Bread Team" />
 						<?php echo CFS()->get('team_copy');?>
 						</div>
 
 							<div class="right-col">
-								<img src="/wp-content/themes/redstarter/images/bakery.jpg" height=480px width=480px alt="Le Red Bread Bakery" />
+								<img src="<?php bloginfo('template_directory'); ?>/images/bakery.jpg" height=480px width=480px alt="Le Red Bread Bakery" />
 							<?php echo CFS()->get('bakery_copy');?>
 							</div>
 
