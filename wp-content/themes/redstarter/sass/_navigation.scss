@@ -31,13 +31,6 @@ a {
   font-weight:700;
 }
 
-.nav-wrapper {
-		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-		border-top: #e1e1e1 solid 1px;
-		border-bottom: #e1e1e1 solid 1px;
-	  display:flex;
-}
-
 .main-navigation li:first-child {
 		border-left: #e1e1e1 solid 1px;
 }
@@ -115,8 +108,9 @@ a {
 	}
 }
 .current_page_item, .current-menu-item > a .main-navigation li {
-		margin-bottom: -5px;
-		border-bottom:5px solid #db272a;
+		// margin-bottom: -15px;
+		box-shadow:inset 0px -3px 0px 0px #db272a;
+		// border-bottom:5px solid #db272a;
 
 }
 

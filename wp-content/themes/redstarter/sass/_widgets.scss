@@ -1,16 +1,47 @@
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+.widget ul {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+.widget a {
+text-decoration: none;
+}
+
+.widget-area {
+  width: 100%;
+	border-left: solid 1px #e1e1e1;
+	display:flex;
+	flex-direction:column;
+	padding-left: 5%;
+	flex:1 0 27%;
+}
+
+.widget-area span   {
+ color:#db272a;
+ font-weight:700;
+ margin: 0;
+}
+
+.widget-area, span, p  {
+ margin:.25em;
+}
+
+.widget-title {
+	text-transform: uppercase;
+	line-height: 1.25;
+}
 
 .widget {
-	margin: 0 0 $base__space-unit;
+margin: 0 0 $base__space-unit;
 
 	/* Make sure select elements fit in widgets. */
 	select {
 		max-width: 100%;
 	}
 }
-
 /* Search widget. */
 .widget_search .search-submit {
 	display: none;
