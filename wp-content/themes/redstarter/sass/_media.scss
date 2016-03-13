@@ -38,51 +38,26 @@ object {
 	text-align: center;
 }
 
-/* Galleries*/
+/* Product Galleries Loop */
 
 .gallery {
-	margin-bottom: $base__space-unit;
+		margin-bottom: $base__space-unit;
+		display:flex;
+		flex-wrap: wrap;
+}
+
+.prod-title-price {
+		display:inline-block;
+		display:flex;
+		justify-content:space-between;
+}
+
+.product-image-loop {
+		flex: 0 0 25%;
 }
 
 .gallery-item {
-	display: inline-block;
-	text-align: center;
-	vertical-align: top;
-	width: 100%;
-
-	.gallery-columns-2 & {
-		max-width: 50%;
-	}
-
-	.gallery-columns-3 & {
-		max-width: 33.33%;
-	}
-
-	.gallery-columns-4 & {
+		border: 1px solid #e1e1e1;
+		flex: 0 0 25%;
 		max-width: 25%;
-	}
-
-	.gallery-columns-5 & {
-		max-width: 20%;
-	}
-
-	.gallery-columns-6 & {
-		max-width: 16.66%;
-	}
-
-	.gallery-columns-7 & {
-		max-width: 14.28%;
-	}
-
-	.gallery-columns-8 & {
-		max-width: 12.5%;
-	}
-
-	.gallery-columns-9 & {
-		max-width: 11.11%;
-	}
-}
-
-.gallery-caption {
-	display: block;
 }

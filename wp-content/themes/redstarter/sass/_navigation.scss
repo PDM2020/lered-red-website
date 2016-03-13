@@ -2,7 +2,38 @@
 # Navigation
 --------------------------------------------------------------*/
 
+
+.btn, button, input[type=button], input[type=reset],  input[type=submit] {
+    border: none;
+    border-radius: 3px;
+    background: #400c0d;
+    color: #FFF;
+    cursor: pointer;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+}
+.nav-search .button .search-submit, button
+ .btn, .nav-search button, .nav-search input[type=button], .nav-search input[type=reset], .nav-search input[type=submit] {
+    border: none;
+    border-radius: 3px;
+		background: transparent;
+    color: #333;
+    cursor: pointer;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+}
+
 /* Links */
+
+p .read-more:last-child {
+	color:#db272a;
+	display:inline-block;
+	font-weight:700;
+	margin: 20px 0 50px 0;
+
+}
 
 a {
 	color: $color__link;

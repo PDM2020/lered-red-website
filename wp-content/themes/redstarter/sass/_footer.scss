@@ -20,13 +20,12 @@
 }
 
 .footer-logo img {
-  margin-top:50px;
-    width:250px;
+    width:260px;
 }
 
 .footer-wrapper {
-  flex-wrap:wrap;
-  display:flex;
+    flex-wrap:wrap;
+    display:flex;
 }
 
 .site-footer a {
@@ -38,17 +37,13 @@
   color:#FFF;
 }
 
-.footer-hours h2, .footer-contact h2 {
-    color: #a1a1a1;
-    line-height:0;
-}
-
 .footer-contact, p .fa-envelope, .footer-contact, p .fa-phone,
-.footer-contact li .fa-facebook, .footer-contact li .fa-twitter, .footer-contact li .fa-google-plus {
-    font-size:1rem;
+.footer-contact li .fa-facebook-square, .footer-contact li .fa-twitter-square, .footer-contact li .fa-google-plus-square {
+    font-size:1.2rem;
     line-height:1.5;
     margin:0;
     padding:0;
+    padding-right: 5px;
     color:#FFFFFF;
 }
 
@@ -63,17 +58,18 @@
     padding: 30px 0 30px;
     text-align:left;
     flex-wrap:wrap;
-    flex:1 0 25%;
+    flex:1 0 33%;
 }
 
 .footer-logo {
-    flex:1 0 50%;
+  display:flex;
+  justify-content:space-between;
 }
 
 .footer-hours {
     text-align:right;
     padding: 30px 0 30px;
-    flex:1 0 25%;
+    flex:1 0 33%;
 }
 
 .site-info {
@@ -87,4 +83,11 @@ div .site-info a {
   font-size:.75rem;
   color:white;
   text-decoration: none;
+}
+
+ .footer-contact h2, .footer-hours h2 {
+    color: #a1a1a1;
+    font-size:1.2em;
+    line-height:0;
+    text-transform:uppercase;
 }

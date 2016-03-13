@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-<!--archives product page-->
+<!--archives product page is this showing products -->
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -15,47 +15,67 @@ get_header(); ?>
 
 			<header class="page-header">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+					the_archive_title( '<h1 class="align-title-center">', '</h1>' );
+					?>
+			</header><!-- product page header -->
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+			<div class="tagline">
+			We are a team of creative and talented individuals who love making delicious treats.
+			</div>
 
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<header class="entry-header">
-						<?php if ( has_post_thumbnail() ) : ?>
-							<?php the_post_thumbnail( 'medium' ); ?>
-						<?php endif; ?>
+			<div><hr class="divider"></div>
 
-						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			<?php
+			$terms = get_terms('product-type');
+			?>
+			<?php if( ! empty($terms) ) : ?>
+				<div class="lrb-categories fixed-width-container" >
 
-						<div class="entry-content">
-							<?php the_excerpt(); ?>
+					<?php foreach ($terms as $term) : ?>
 
-							<sapn><?php echo CFS()->get( 'price' ); ?></span>
-						</div><!-- .entry-content -->
+						<div class="lrb-cat-loop">
+							<img src="<?php echo get_template_directory_uri() . '/images\/' . $term->slug; ?>.png" alt=""/>
+								<a href="<?php echo get_term_link($term); ?>"><h3><?php echo $term ->name; ?></h3>	</a></p>
+							</div>
 
-						<div class="entry-meta">
-							<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
-						</div><!-- .entry-meta -->
-					</header><!-- .entry-header -->
+						<?php endforeach; ?>
+
+					<?php endif; ?>
+
+				</div> <!-- end of cat loop fixed width -->
+
+			<div class="fixed-width-container">
 
 
-					</div><!-- .entry-content -->
+				<div class="gallery"> <!-- Start the Loop -->
 
-				</article><!-- #post-## -->
+		 	<?php while ( have_posts() ) : the_post(); ?>
+					<header class="gallery-item">
+							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+								<?php if ( has_post_thumbnail() ) : ?>
+
+								<div class="product-image-loop">
+										<?php the_post_thumbnail( 'medium' ); ?>
+								</div>
+
+							<?php endif; ?>
+		<div class="prod-title-price">
+						<?php the_title( '<span class="entry-title">', '</span>' ); ?>
+						<span><?php echo CFS()->get( 'price' ); ?></span>
+						</div><!-- price -->
+
+						</article><!-- #post-## -->
+					</header><!-- gallery-item  -->
 
 			<?php endwhile; ?>
-
+		</div><!-- end gallery -->
 
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

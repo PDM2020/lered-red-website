@@ -1,27 +1,29 @@
 
-.hero-image {
+
+
+.banner-image {
     background: url("../images/hero-bread.jpg") center top no-repeat #FFFFFF;
     background-size: cover;
-      height: 550px;
+    height: 550px;
 }
 
-.tag-line {
+.banner-text {
   padding-top:235px;
   text-transform:uppercase;
   text-align:center;
   font-size: 7em;
-    font-weight: 700;
+  font-weight: 700;
   color: #fff;
   font-family: 'Overlock',sans-serif;
   text-shadow: 1px 1px 2px #333;
 }
 
-.lrd-categories {
+.lrb-categories {
   align-items:flex-end;
   display:flex;
 }
 
-.lrd-cat-loop {
+.lrb-cat-loop {
   align-items:center;
   flex-direction:column;
   padding: 20px 10px 10px 10px;
@@ -29,17 +31,16 @@
   flex: 1 0 25%;
 }
 
-
-.front-page-btn a, a:hover {
-  text-decoration:underline;
-  color: #FFF !important;
-}
-
 .front-page-btn {
-  padding:1em 2em 1em 2em;
-  border-radius: 3px;
+
+  padding:1em 1em 1em 1em;
+  border-radius: 4px;
   background-color:#222;
   color:#FFF;
+  width:280px;
+}
+
+.front-page-btn a {
   text-decoration:none;
 }
 
@@ -52,16 +53,16 @@
 }
 
 .category-images p {
-  text-align:left;
-  color: #222;
-  line-height:1.3;
+    text-align:left;
+    color: #222;
+    line-height:1.3;
 }
+
 hr.divider {
-  text-align:center;
-  position: relative;
-  width:600px;
-  height:1px;
-margin-bottom:100px;
+    text-align:center;
+    position: relative;
+    width:300px;
+    height:1px;
 }
 
 hr.divider::after {
@@ -74,9 +75,22 @@ hr.divider::after {
     top:50%;
 }
 
+.divider {
+		margin: 60px auto 60px auto;
+}
+
+.latest-news-posts h3 {
+  padding: 0px 15px 0px 15px;
+  text-overflow: ellipsis;
+  width: 255px;
+  white-space: nowrap;
+  overflow: hidden;
+  line-heigth:1;
+  margin-bottom: 1px;
+  }
+
 .latest-news-title {
-  text-transform:uppercase;
-  text-align:center;
+    text-align:center;
 }
 
 .latest-news-posts {
@@ -85,10 +99,11 @@ hr.divider::after {
     border-top: 1px solid #e1e1e1;
     padding: 3rem 0;
 }
+
 .news-post-loop {
   display:flex;
+  border: 1px solid #FFFFFF;
 }
-
 
 .news-post-loop ul {
   display:flex;
@@ -96,31 +111,40 @@ hr.divider::after {
   margin: 0;
   padding: 0;
   flex-wrap:wrap;
+}
 
+.news-post-loop h3 a {
+    text-decoration:none;
+}
+
+.news-post-loop li {
+  box-shadow:1px 1px 1px 1px #ccc;
 
 }
 
 .news-post-loop li {
-
+    list-style: none;
+}
+.news-loop-title .entry-meta {
+      padding: 0px 0px 10px 10px;
+      font-size: .9em;
 }
 
-
-.latest-news-posts .image-post-loop {
+.image-post-loop {
   height: 200px;
   overflow: hidden;
   position: relative;
   border:1px solid #e1e1e1;
 }
+
 .products-cta .front-page-btn a, a:visited {
   color: #FFF;
 }
 
-
-// .wp-post-image {
-//    transform: translate(-50%,-50%);
-//     left: 50%;
-//     max-width: none;
-//     position: absolute;
-//     top: 50%;
-//
-// }
+.image-post-loop img {
+   transform: translate(-50%,-50%);
+    left: 50%;
+    max-width: none;
+    position: absolute;
+    top: 50%;
+}

@@ -59,7 +59,6 @@ if (is_post_type_archive(array('product'))) {
 return $title;
 }
 
-
 add_filter('get_the_archive_title', 'lrb_archive_title')
 
 ?>

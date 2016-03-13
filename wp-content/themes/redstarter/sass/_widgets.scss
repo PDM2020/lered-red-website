@@ -1,11 +1,50 @@
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+.lrb-widget-phone .fa-phone {
+		line-height: 1.6;
+		margin-left: -3px;
+		font-size:1.1em;
+		width: 22px;
+		color:grey;
+}
+
+.lrb-widget-email .fa-envelope {
+		margin-left: -3px;
+		line-height: 1.6;
+		width: 23px;
+		font-size:1.1em;
+		color:grey;
+}
+.lrb-widget-address .fa-map-marker {
+		line-height: 1.6;
+		color:grey;
+}
+//
+.widget .widget-contact-info li:before {
+		content: "\f041";
+		margin: 0 2px -3px -28px;
+		font-family: FontAwesome;
+		display: inline-block;
+		color:grey;
+		width: 17px;
+		font-size:1.2em;
+		}
+
+.widget-business-hours {
+	margin-left: -3px;
+}
+
 .widget ul {
 	list-style-type: none;
-	margin:0;
 	padding:0;
 }
+ .widget_archive ul {
+    padding: 0;
+    margin: 0;
+}
+
+
 .widget a {
 text-decoration: none;
 }
@@ -16,7 +55,7 @@ text-decoration: none;
 	display:flex;
 	flex-direction:column;
 	padding-left: 5%;
-	flex:1 0 27%;
+	flex:1 0 22%;
 }
 
 .widget-area span   {

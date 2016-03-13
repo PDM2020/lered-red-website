@@ -1,6 +1,10 @@
 /*--------------------------------------------------------------
 # header logo social media
 --------------------------------------------------------------*/
+.entry-header {
+	padding: 40px 0px 0px 0px;
+}
+
 .nav-wrapper {
 		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 		border-top: #e1e1e1 solid 1px;
@@ -41,7 +45,7 @@
 }
 
 input[type="search"], input[type="submit"] {
-  position:relative;
+	position:relative;
  border:none;
  background-color:transparent;
  padding-top:10px;
@@ -49,14 +53,7 @@ input[type="search"], input[type="submit"] {
 
 }
 
-.fa {
-  margin:0;
-  font-size:1.3rem;
-  padding-left: 20px;
-  color: #a1a1a1;
-}
-
-button, .search-submit {
+button, .nav-search-submit {
   border:none;
   position:relative;
   background-color: transparent;
@@ -64,6 +61,7 @@ button, .search-submit {
 }
 
 .fa-search {
+	padding-left: 20px;
   margin:0;
   position:relative;
   right:27px;
@@ -71,10 +69,14 @@ button, .search-submit {
 }
 
 .social ul {
-    margin:0;
+		margin:0;
     list-style:none;
 }
-
 .social {
+	padding-left: 20px;
     align-self:center;
+}
+
+.social .fa {
+	padding-left: 20px;
 }

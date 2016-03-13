@@ -1,14 +1,84 @@
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+// contact form 7
+
+
+.wpcf7-form .contact-page-btn input[type="submit"] {
+  padding:.75em 2em .75em 2em;
+  background-color:#222;
+  border-radius: 3px;
+  color:#FFF;
+  text-decoration:none;
+  width:180px;
+  text-align: center;
+}
+
+.name-email {
+  display:flex;
+}
+.name-email div {
+  flex:0 0 50%;
+}
+
+.wpcf7-form div p label {
+font-weight:700;
+}
+.front-page-btn {
+  width: 180px;
+  text-align:center;
+  color: #FFF;
+}
+
+.required {
+  color:red;
+  font-size: 16px;
+  font-weight:700;
+}
+
+input[type="text"],
+input[type="email"],
+.wpcf7 textarea {
+    background-color: #fafafa;
+		padding:12px;
+    color: #666;
+    font-size:1em;
+    outline:none;
+    border:1px solid #e1e1e1;
+      width: 100%;
+}
 
 
 // about us page-links
 
-.align-title-center {
-text-align:center;
 
+.sub-heading {
+  color: grey;
+  margin-bottom:.75em;
+  display:block;
+  margin-left:-4px;
 }
+
+ .about-sub-title {
+   margin-left:-4px;
+   font-family: 'Overlock',serif;
+   display:block;
+   font-weight: 700;
+   font-size:1.3em;
+ }
+
+.about-copy {
+   padding-bottom: 20px;
+}
+.tagline {
+	text-align:center;
+} 
+
+.tagline, .align-title-center {
+	text-align:center;
+  padding: 20px 0px 20px 0px;
+}
+
 .span-two-col {
 		display:flex;
 		justify-content:space-between;
@@ -26,10 +96,18 @@ text-align:center;
 
 /* Posts and pages */
 
+//do not apply these rules to pages with side bar (product-type, contact us and blog page)
+body:not(.home):not(.post-type-archive-product):not(.page-template-about) .content-area {
+	display:flex;
+	// padding-top:3em;
+	flex:1 0 67%;
+	padding-right:5%;
+
+}
+
+// do not apply these rules to full width pages
 body:not(.home) .site-content {
 	display:flex;
-	flex:1 0 66%;
-	padding-right:5%;
 	width:1024px;
 	margin:0 auto;
 }
@@ -88,3 +166,8 @@ body:not(.home) .site-content {
 .bypostauthor {
 	display: block;
 }
+
+// .archive .page-header, .comment, .search .page-header {
+// border-bottom: 1px dashed #d2d2d2;
+// padding-bottom: 1.5rem;
+// }

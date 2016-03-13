@@ -6,7 +6,6 @@
  */
 
 ?>
-
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
@@ -18,15 +17,15 @@
 										<p><i class="fa fa-phone"></i> <a href="tel:6045555555">604 555-5555</a></p>
 											<ul>
 												<li>
-													<a href="#"><i class="fa fa-facebook"></i></a>
-													<a href="#"><i class="fa fa-twitter"></i></a>
-													<a href="#"><i class="fa fa-google-plus"></a></i>
+													<a href="#"><i class="fa fa-facebook-square"></i></a>
+													<a href="#"><i class="fa fa-twitter-square"></i></a>
+													<a href="#"><i class="fa fa-google-plus-square"></a></i>
 												</li>
 											</ul>
 								</div><!-- footer-contact -->
 
 								<div class="footer-logo">
-									<img src="/wp-content/themes/redstarter/images/lrb-logo-white.svg"/>
+									<img src="<?php bloginfo('template_directory'); ?>/images/lrb-logo-white.svg"/>
 								</div><!-- footer-logo -->
 
 								<div class="footer-hours">
@@ -34,14 +33,16 @@
 									<p><span class="hours">Monday-Friday:</span> 9am to 5pm</p>
 									<p><span class="hours">Saturday:</span> 10am to 2pm</p>
 									<p><span class="hours">Sunday:</span> Closed</p>
-								</div><!-- footer-contact -->
+								</div><!-- footer-hours -->
 
 				</div><!-- footer-wrapper -->
 				<div class="site-info">
-					<a href="<?php echo esc_url( 'http://red-bread.dev/' ); ?>"><?php printf( esc_html( 'Copyright &copy; Le Red Bread 2016' ), 'Le red Bread' ); ?></a>
+					<div class="fixed-width-container">
+					<a href="<?php echo esc_url( 'https://red-bread.dev/wp-admin/' ); ?>"><?php printf( esc_html( 'Copyright &copy; Le Red Bread 2016' ), 'Le red Bread' ); ?></a>
+				</div>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
-		</div><!-- #page -->
+		 </div><!-- #page -->
 
 		<?php wp_footer(); ?>
 
