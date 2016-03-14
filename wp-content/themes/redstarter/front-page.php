@@ -74,7 +74,53 @@ get_header(); ?>
 
 						<?php endforeach; wp_reset_postdata();?>
 					</div>
-	<div class="align-title-center"><h1>what others are saying</h1><hr class="divider"></div>
+	<div class="align-title-center"><h1>what others say about us</h1><hr class="divider"></div>
+
+	<div class="testimonials-wrapper fixed-width-container">
+
+					<div class="testimonial-1">
+						<div class="testimonial-img">
+							<img src="<?php bloginfo('template_directory'); ?>/images/dr-dosist-headshot.png "/>
+						</div>
+						<div class="testimonial-copy">
+								<div>Healthy food be damned! If you are a bakery and sweet addict like myself this place is life changing. So many goodies. Have a cheat day and eat all the pretzels!</div>
+								<span class="test-name">Dr. Dosist</span>
+								<span class="test-job">Nutritionist - Health Time Clinic</span>
+						</div>
+				</div><!-- testimonial 1-->
+				<div class="testimonial-2">
+					<div class="testimonial-img">
+						<img src="<?php bloginfo('template_directory'); ?>/images/maxi-milli-headshot.png"/>
+					</div>
+					<div class="testimonial-copy">
+								<div>Do you like bread? Seriously, who doesn't? You have to check Le Red Bread's lovely loaves. Fresh flavours every day...need I say more?</div>
+								<span class="test-name">Maxi Milli</span>
+								<span class="test-job">Chef - Sailor Sppon</span>
+					</div>
+			</div><!-- testimonial 2-->
+
+			<div class="testimonial-3">
+				<div class="testimonial-img">
+					<img src="<?php bloginfo('template_directory'); ?>/images/ana-vandana-headshot.png"/>
+				</div>
+				<div class="testimonial-copy">
+						<div>Excellent cookies! They always have unique flavours and the cookies are always super fresh. Make sure you get them before they sell out! And keep an eye out on holidays, the flavour combinations they come up with are brilliant. Delicious!</div>
+						<span class="test-name">Anna Vandana</span>
+						<span class="test-job">Author - Food Is Great Magazine</span>
+				</div>
+		</div><!-- testimonial 3-->
+		<div class="testimonial-4">
+			<div class="testimonial-img">
+				<img src="<?php bloginfo('template_directory'); ?>/images/martha-m-masters-headshot.png "/>
+			</div>
+			<div class="testimonial-copy">
+						<div>Where has this bakery been all my life! I absolutely love their cookies and muffins. Nom nom.</div>
+						<span class="test-name">Martha M. Masters</span>
+						<span class="test-job">Food Critic - Wiki Travel</span>
+			</div>
+	</div><!-- testimonial 4-->
+
+	</div> <!-- test-wrapper -->
 				</div>
 			</div>
 		</main><!-- #main -->

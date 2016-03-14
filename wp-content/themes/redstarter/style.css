@@ -7,7 +7,7 @@ Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags:black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout,
+Tags:
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -18,8 +18,9 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
-
-/**
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
 # Normalize
 # Embedded Fonts
 # Typography
@@ -65,6 +66,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   display: -ms-flexbox;
   display: flex; }
 
+.lrb-cat-loop img {
+  width: 230px;
+  height: 160px; }
+
 .lrb-cat-loop {
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -72,7 +77,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 20px 10px 10px 10px;
+  padding: 40px 10px 10px 10px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -188,6 +193,114 @@ hr.divider::after {
   position: absolute;
   top: 50%; }
 
+.testimonials-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.testimonial-1 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-right: 1px dashed #d2d2d2;
+  border-bottom: 1px dashed #d2d2d2;
+  padding: 20px 0 20px 20px;
+  -webkit-flex: 0 0 50%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.testimonial-2 {
+  border-bottom: 1px dashed #d2d2d2;
+  padding: 20px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 50%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2; }
+
+.testimonial-3 {
+  border-right: 1px dashed #d2d2d2;
+  padding: 20px 0 20px 20px;
+  -webkit-flex: 0 0 50%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-order: 3;
+      -ms-flex-order: 3;
+          order: 3; }
+
+.testimonial-4 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 20px;
+  -webkit-flex: 0 0 50%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  -webkit-order: 4;
+      -ms-flex-order: 4;
+          order: 4; }
+
+.testimonial-copy div {
+  padding-bottom: 20px; }
+
+.testimonial-copy {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-flex: 0 0 65%;
+      -ms-flex: 0 0 65%;
+          flex: 0 0 65%;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.testimonial-img {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 25%;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  margin: 0;
+  padding-right: 20px; }
+
+.testimonial-img img {
+  max-width: 100px;
+  height: 100px;
+  position: relative; }
+
+.test-name {
+  font-weight: 700;
+  line-height: 1; }
+
+.test-job {
+  line-height: 1.6; }
+
 /*--------------------------------------------------------------
 # footer styles
 --------------------------------------------------------------*/
@@ -223,8 +336,11 @@ hr.divider::after {
 .footer-contact a:hover {
   color: #FFF; }
 
-.footer-contact, p .fa-envelope, .footer-contact, p .fa-phone,
-.footer-contact li .fa-facebook-square, .footer-contact li .fa-twitter-square, .footer-contact li .fa-google-plus-square {
+.footer-contact p .fa-envelope,
+.footer-contact p .fa-phone,
+.footer-contact li .fa-facebook-square,
+.footer-contact li .fa-twitter-square,
+.footer-contact li .fa-google-plus-square {
   font-size: 1.2rem;
   line-height: 1.5;
   margin: 0;
@@ -246,24 +362,27 @@ hr.divider::after {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-flex: 1 0 33%;
-      -ms-flex: 1 0 33%;
-          flex: 1 0 33%; }
+  -webkit-flex: 1 0 25%;
+      -ms-flex: 1 0 25%;
+          flex: 1 0 25%; }
 
 .footer-logo {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex: 1 0 50%;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%; }
 
 .footer-hours {
-  text-align: right;
-  padding: 30px 0 30px;
-  -webkit-flex: 1 0 33%;
-      -ms-flex: 1 0 33%;
-          flex: 1 0 33%; }
+  text-align: left;
+  padding: 30px 0 30px 44px;
+  -webkit-flex: 1 0 25%;
+      -ms-flex: 1 0 25%;
+          flex: 1 0 25%; }
 
 .site-info {
   padding-top: 30px;
@@ -278,7 +397,7 @@ div .site-info a {
 
 .footer-contact h2, .footer-hours h2 {
   color: #a1a1a1;
-  font-size: 1.2em;
+  font-size: 1.4em;
   line-height: 0;
   text-transform: uppercase; }
 
@@ -749,7 +868,7 @@ button, .nav-search-submit {
   padding-left: 20px;
   margin: 0;
   position: relative;
-  right: 27px; }
+  right: 12px; }
 
 .social ul {
   margin: 0;
@@ -992,6 +1111,7 @@ li:hover > ul,
   text-decoration: none; }
 
 .widget-area {
+  padding-top: 3em;
   width: 100%;
   border-left: solid 1px #e1e1e1;
   display: -webkit-flex;
@@ -1072,6 +1192,25 @@ input[type="email"],
   outline: none;
   border: 1px solid #e1e1e1;
   width: 100%; }
+
+.lrb-cat-loop-prod {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 10px 10px 10px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 0 25%;
+      -ms-flex: 1 0 25%;
+          flex: 1 0 25%; }
+
+.lrb-cat-loop-prod img {
+  width: 120px;
+  height: 83px; }
 
 .sub-heading {
   color: grey;
@@ -1247,4 +1386,38 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
+.taxonomy-description {
+  border-bottom: 1px dashed #d2d2d2;
+  padding-bottom: 1.5rem; }
+
+.prod-type-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px dashed #d2d2d2; }
+
+.product-type-thumb {
+  -webkit-flex: 0 1 25%;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%; }
+
+.description-price {
+  -webkit-flex: 0 1 75%;
+      -ms-flex: 0 1 75%;
+          flex: 0 1 75%;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: inline-block;
+  position: relative;
+  top: -15px; }
+
+.prod-type-title a {
+  text-decoration: none;
+  font-size: 1em;
+  color: #db272a;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  position: relative;
+  top: -14px; }

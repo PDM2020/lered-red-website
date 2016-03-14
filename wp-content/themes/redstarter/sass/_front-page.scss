@@ -1,6 +1,5 @@
 
 
-
 .banner-image {
     background: url("../images/hero-bread.jpg") center top no-repeat #FFFFFF;
     background-size: cover;
@@ -23,16 +22,20 @@
   display:flex;
 }
 
+.lrb-cat-loop img {
+  width: 230px;
+  height: 160px;
+  }
+
 .lrb-cat-loop {
   align-items:center;
   flex-direction:column;
-  padding: 20px 10px 10px 10px;
+  padding: 40px 10px 10px 10px;
   display:flex;
   flex: 1 0 25%;
 }
 
 .front-page-btn {
-
   padding:1em 1em 1em 1em;
   border-radius: 4px;
   background-color:#222;
@@ -147,4 +150,79 @@ hr.divider::after {
     max-width: none;
     position: absolute;
     top: 50%;
+}
+
+.testimonials-wrapper {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.testimonial-1 {
+    display:flex;
+    border-right: 1px dashed #d2d2d2;
+    border-bottom: 1px dashed #d2d2d2;
+    padding:20px 0 20px 20px;
+    flex:0 0 50%;
+    flex-wrap: wrap;
+}
+
+.testimonial-2 {
+    border-bottom: 1px dashed #d2d2d2;
+    padding:20px;
+    display:flex;
+    flex:0 0 50%;
+    order:2;
+
+}
+
+.testimonial-3 {
+    border-right: 1px dashed #d2d2d2;
+    padding:20px 0 20px 20px;
+    flex:0 0 50%;
+    flex-wrap: wrap;
+    display:flex;
+    order:3;
+}
+
+  .testimonial-4 {
+    display:flex;
+    flex-wrap: wrap;
+    padding:20px;
+    flex:0 0 50%;
+    order: 4;
+  }
+
+.testimonial-copy div {
+  padding-bottom: 20px;
+}
+
+.testimonial-copy {
+    display:flex;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    flex:0 0 65%;
+    flex-direction:column;
+}
+
+.testimonial-img {
+
+    display:flex;
+    flex:0 0 25%;
+    margin:0;
+    padding-right: 20px;
+}
+
+.testimonial-img img {
+    max-width: 100px;
+    height:100px;
+    position: relative;
+}
+
+.test-name {
+    font-weight:700;
+    line-height:1;
+}
+
+.test-job {
+    line-height:1.6;
 }

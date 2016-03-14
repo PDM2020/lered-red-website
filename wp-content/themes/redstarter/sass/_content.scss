@@ -51,6 +51,18 @@ input[type="email"],
 
 // about us page-links
 
+.lrb-cat-loop-prod {
+  align-items:center;
+  flex-direction:column;
+  padding: 20px 10px 10px 10px;
+  display:flex;
+  flex: 1 0 25%;
+}
+
+.lrb-cat-loop-prod img {
+    width: 120px;
+    height: 83px;
+}
 
 .sub-heading {
   color: grey;
@@ -72,7 +84,7 @@ input[type="email"],
 }
 .tagline {
 	text-align:center;
-} 
+}
 
 .tagline, .align-title-center {
 	text-align:center;
@@ -96,20 +108,18 @@ input[type="email"],
 
 /* Posts and pages */
 
-//do not apply these rules to pages with side bar (product-type, contact us and blog page)
 body:not(.home):not(.post-type-archive-product):not(.page-template-about) .content-area {
 	display:flex;
-	// padding-top:3em;
-	flex:1 0 67%;
+  flex:1 0 67%;
 	padding-right:5%;
 
 }
 
-// do not apply these rules to full width pages
 body:not(.home) .site-content {
 	display:flex;
 	width:1024px;
 	margin:0 auto;
+
 }
 
 .entry-title, .entry-meta {
@@ -166,8 +176,3 @@ body:not(.home) .site-content {
 .bypostauthor {
 	display: block;
 }
-
-// .archive .page-header, .comment, .search .page-header {
-// border-bottom: 1px dashed #d2d2d2;
-// padding-bottom: 1.5rem;
-// }
