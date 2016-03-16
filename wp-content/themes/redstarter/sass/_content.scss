@@ -1,178 +1,220 @@
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-// contact form 7
+  /*--------------------------------------------------------------
+  # Content
+  --------------------------------------------------------------*/
+//no search results page
 
-
-.wpcf7-form .contact-page-btn input[type="submit"] {
-  padding:.75em 2em .75em 2em;
-  background-color:#222;
-  border-radius: 3px;
-  color:#FFF;
-  text-decoration:none;
-  width:180px;
-  text-align: center;
+.nav-search {
+	  margin:0;
+	  float:right;
 }
 
-.name-email {
-  display:flex;
-}
-.name-email div {
-  flex:0 0 50%;
-}
+.page-content input[type="search"],.search input[type="submit"] {
 
-.wpcf7-form div p label {
-font-weight:700;
-}
-.front-page-btn {
-  width: 180px;
-  text-align:center;
-  color: #FFF;
-}
-
-.required {
-  color:red;
-  font-size: 16px;
-  font-weight:700;
-}
-
-input[type="text"],
-input[type="email"],
-.wpcf7 textarea {
     background-color: #fafafa;
-		padding:12px;
+    border: 1px solid #e1e1e1;
+		padding-top:10px;
+		outline:none;
     color: #666;
-    font-size:1em;
-    outline:none;
-    border:1px solid #e1e1e1;
-      width: 100%;
+    border-radius: 3px;
 }
 
-
-// about us page-links
-
-.lrb-cat-loop-prod {
-  align-items:center;
-  flex-direction:column;
-  padding: 20px 10px 10px 10px;
-  display:flex;
-  flex: 1 0 25%;
+.page-content button, .nav-search-submit {
+	  border:none;
+	  position:relative;
+	  background-color: #222;
+	  width:20px;
 }
 
-.lrb-cat-loop-prod img {
-    width: 120px;
-    height: 83px;
+.page-content button, .fa-search {
+	  margin:0;
+	  position:relative;
+	  right:12px;
 }
 
-.sub-heading {
-  color: grey;
-  margin-bottom:.75em;
-  display:block;
-  margin-left:-4px;
-}
+  // contact form 7
 
- .about-sub-title {
-   margin-left:-4px;
-   font-family: 'Overlock',serif;
-   display:block;
-   font-weight: 700;
-   font-size:1.3em;
- }
+  .wpcf7-form .contact-page-btn input[type="submit"] {
+    padding:.75em 2em .75em 2em;
+    background-color:#222;
+    border-radius: 3px;
+    color:#FFF;
+    text-decoration:none;
+    width:180px;
+    text-align: center;
+  }
+
+  .name-email {
+    display:flex;
+  }
+
+  .name-email div {
+    flex:0 0 50%;
+  }
+
+  .wpcf7-form div p label {
+  font-weight:700;
+  }
+
+  .front-page-btn {
+    width: 180px;
+    text-align:center;
+    color: #FFF;
+  }
+
+  .required {
+    color:red;
+    font-size: 16px;
+    font-weight:700;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  .wpcf7 textarea {
+      background-color: #fafafa;
+  		padding:12px;
+      color: #666;
+      font-size:1em;
+      outline:none;
+      border:1px solid #e1e1e1;
+        width: 100%;
+  }
+
+  // products page
+
+  .lrb-categories {
+      width:75%
+    }
+
+    .lrb-cat-loop-prod {
+        align-items:center;
+        flex-direction:column;
+        padding: 20px 10px 10px 10px;
+        display:flex;
+        flex: 1 0 25%;
+    }
+
+.lrb-cat-loop-prod a, a:visited {
+        text-decoration:none;
+  }
+  .lrb-cat-loop-prod a:hover {
+        text-decoration:underline;
+  }
+
+    .lrb-cat-loop-prod img {
+        width: 120px;
+        height: 83px;
+    }
+
+  // about us page-links
+
+  .sub-heading {
+        color: grey;
+        margin-bottom:.75em;
+        display:block;
+        margin-left:-4px;
+  }
+
+   .about-sub-title {
+       margin-left:-4px;
+       font-family: 'Overlock',serif;
+       display:block;
+       font-weight: 700;
+       font-size:1.3em;
+   }
 
 .about-copy {
-   padding-bottom: 20px;
-}
+       padding-bottom: 20px;
+  }
+
 .tagline {
-	text-align:center;
+      text-align:center;
+      margin: 0;
+      padding: 0;
 }
 
-.tagline, .align-title-center {
-	text-align:center;
-  padding: 20px 0px 20px 0px;
+.align-title-center {
+    	text-align:center;
+      padding-top: 20px;
 }
 
 .span-two-col {
-		display:flex;
-		justify-content:space-between;
-}
-.left-col {
-	flex-wrap: wrap;
-		display:flex;
-		flex:0 1 45%;
-}
-.right-col {
-	flex-wrap: wrap;
-		display:flex;
-		flex:0 1 45%;
-}
+  		display:flex;
+  		justify-content:space-between;
+  }
 
-/* Posts and pages */
+.left-col {
+  	  flex-wrap: wrap;
+  		display:flex;
+  		flex:0 1 45%;
+  }
+
+.right-col {
+  	  flex-wrap: wrap;
+  		display:flex;
+  		flex:0 1 45%;
+  }
+
+  /* Posts and pages */
 
 body:not(.home):not(.post-type-archive-product):not(.page-template-about) .content-area {
-	display:flex;
-  flex:1 0 67%;
-	padding-right:5%;
+    	display:flex;
+      flex:1 0 67%;
+    	padding-right:5%;
+  }
 
-}
+  body:not(.home) .site-content {
+    	display:flex;
+    	width:1024px;
+    	margin:0 auto;
+  }
 
-body:not(.home) .site-content {
-	display:flex;
-	width:1024px;
-	margin:0 auto;
+  .sticky {
+    	display: block;
+  }
 
-}
+  .hentry {
+    	margin: 0 0 $base__space-unit;
+  }
 
-.entry-title, .entry-meta {
+  .updated:not(.published){
+  	  display: none;
+  }
 
-}
+  .single .byline,
+  .group-blog .byline {
+  	  display: inline;
+  }
 
-.sticky {
-	display: block;
-}
+  .page-content,
+  .entry-content,
+  .entry-summary {
+  	  margin: $base__space-unit 0 0;
+  }
 
-.hentry {
-	margin: 0 0 $base__space-unit;
-}
+  .page-content p,
+  .entry-content,
+  .entry-summary, p {
+  	  color:#222;
+  }
 
-.updated:not(.published){
-	display: none;
-}
+  .page-links {
+    	clear: both;
+    	margin: 0 0 $base__space-unit;
+  }
 
-.single .byline,
-.group-blog .byline {
-	display: inline;
-}
+  /* Asides */
 
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: $base__space-unit 0 0;
-}
+  .blog .format-aside .entry-title,
+  .archive .format-aside .entry-title {
+  	display: none;
+  }
 
-.page-content p,
-.entry-content,
-.entry-summary, p {
-	color:#222;
-}
+  /* Comments */
 
-.page-links {
-	clear: both;
-	margin: 0 0 $base__space-unit;
-}
+  .comment-content a {
+  	word-wrap: break-word;
+  }
 
-/* Asides */
-
-.blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
-	display: none;
-}
-
-/* Comments */
-
-.comment-content a {
-	word-wrap: break-word;
-}
-
-.bypostauthor {
-	display: block;
-}
+  .bypostauthor {
+  	display: block;
+  }

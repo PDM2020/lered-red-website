@@ -6,17 +6,21 @@
     color: #FFF;
 }
 
+.footer-contact a:hover {
+    color:#FFF;
+}
+
 .site-footer {
-  margin:0 auto;
-  background-color: #222222;
-  text-align: center;
-  height:250px;
+    margin:0 auto;
+    background-color: #222222;
+    text-align: center;
+    height:250px;
 }
 
 .footer-contact p, .footer-hours p, span .hours {
-  color:#FFF;
-  font-size:1rem;
-  margin:0;
+    color:#FFF;
+    font-size:1rem;
+    margin:0;
 }
 
 .footer-logo img {
@@ -29,12 +33,8 @@
 }
 
 .site-footer a {
-  text-decoration:none;
-  color:#FFF;
-}
-
-.footer-contact a:hover {
-  color:#FFF;
+    text-decoration:none;
+    color:#FFF;
 }
 
 .footer-contact p .fa-envelope,
@@ -51,9 +51,9 @@
 }
 
 .footer-contact ul {
-  list-style: none;
-  margin:0;
-  padding:0;
+    list-style: none;
+    margin:0;
+    padding:0;
 }
 
 .footer-contact  {
@@ -65,9 +65,9 @@
 }
 
 .footer-logo {
-  display:flex;
-  justify-content:center;
-  flex:1 0 50%;
+    display:flex;
+    justify-content:center;
+    flex:1 0 50%;
 }
 
 .footer-hours {
@@ -77,21 +77,20 @@
 }
 
 .site-info {
-  padding-top:30px;
-  background-color: #333333;
-  text-align: center;
-  height:80px;
+    padding-top:30px;
+    background-color: #333333;
+    text-align: center;
+    height:80px;
 }
 
 div .site-info a {
-  font-size:.75rem;
-  color:white;
-  text-decoration: none;
+    font-size:.75rem;
+    color:white;
+    text-decoration: none;
 }
 
- .footer-contact h2, .footer-hours h2 {
+ .footer-contact h3, .footer-hours h3 {
     color: #a1a1a1;
-    font-size:1.4em;
     line-height:0;
     text-transform:uppercase;
 }

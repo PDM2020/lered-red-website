@@ -138,17 +138,14 @@ a {
 		color: #222222;
 	}
 }
-.current_page_item, .current-menu-item > a .main-navigation li {
-		// margin-bottom: -15px;
-		box-shadow:inset 0px -3px 0px 0px #db272a;
-		// border-bottom:5px solid #db272a;
-
+.current_page_item, .current-menu-item, .main-navigation ul {
+    box-shadow:inset 0px -3px 0px 0px #db272a;
 }
 
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	display: block;
+	  display: block;
 }
 
 @media screen and (min-width: 37.5em) {

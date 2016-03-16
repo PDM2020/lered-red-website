@@ -12,7 +12,7 @@
 				<div class="footer-wrapper fixed-width-container">
 
 								<div class="footer-contact">
-										<h2>Contact Us</h2>
+										<h3>Contact Us</h3>
 						<p>	<i class="fa fa-envelope"></i> info@leredbred.com</p>
 										<p><i class="fa fa-phone"></i> <a href="tel:6045555555">604 555-5555</a></p>
 											<ul>
@@ -29,7 +29,7 @@
 								</div><!-- footer-logo -->
 
 								<div class="footer-hours">
-									<h2>Business Hours</h2>
+									<h3>Business Hours</h3>
 									<p><span class="hours">Monday-Friday:</span> 9am to 5pm</p>
 									<p><span class="hours">Saturday:</span> 10am to 2pm</p>
 									<p><span class="hours">Sunday:</span> Closed</p>

@@ -7,44 +7,44 @@
 }
 
 .banner-text {
-  padding-top:235px;
-  text-transform:uppercase;
-  text-align:center;
-  font-size: 7em;
-  font-weight: 700;
-  color: #fff;
-  font-family: 'Overlock',sans-serif;
-  text-shadow: 1px 1px 2px #333;
+    padding-top:235px;
+    text-transform:uppercase;
+    text-align:center;
+    font-size: 7em;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Overlock',sans-serif;
+    text-shadow: 1px 1px 2px #333;
 }
 
 .lrb-categories {
-  align-items:flex-end;
-  display:flex;
+    align-items:flex-end;
+    display:flex;
 }
 
 .lrb-cat-loop img {
-  width: 230px;
-  height: 160px;
-  }
+    width: 230px;
+    height: 160px;
+}
 
 .lrb-cat-loop {
-  align-items:center;
-  flex-direction:column;
-  padding: 40px 10px 10px 10px;
-  display:flex;
-  flex: 1 0 25%;
+    align-items:center;
+    flex-direction:column;
+    padding: 40px 10px 10px 10px;
+    display:flex;
+    flex: 1 0 25%;
 }
 
 .front-page-btn {
-  padding:1em 1em 1em 1em;
-  border-radius: 4px;
-  background-color:#222;
-  color:#FFF;
-  width:280px;
+    padding:1em 1em 1em 1em;
+    border-radius: 4px;
+    background-color:#222;
+    color:#FFF;
+    width:280px;
 }
 
 .front-page-btn a {
-  text-decoration:none;
+    text-decoration:none;
 }
 
 .products-cta {
@@ -83,14 +83,14 @@ hr.divider::after {
 }
 
 .latest-news-posts h3 {
-  padding: 0px 15px 0px 15px;
-  text-overflow: ellipsis;
-  width: 255px;
-  white-space: nowrap;
-  overflow: hidden;
-  line-heigth:1;
-  margin-bottom: 1px;
-  }
+    padding: 0px 15px 0px 15px;
+    text-overflow: ellipsis;
+    width: 255px;
+    white-space: nowrap;
+    overflow: hidden;
+    line-heigth:1;
+    margin-bottom: 1px;
+}
 
 .latest-news-title {
     text-align:center;
@@ -121,31 +121,30 @@ hr.divider::after {
 }
 
 .news-post-loop li {
-  box-shadow:1px 1px 1px 1px #ccc;
-
+    box-shadow:1px 1px 1px 1px #ccc;
 }
 
 .news-post-loop li {
     list-style: none;
 }
 .news-loop-title .entry-meta {
-      padding: 0px 0px 10px 10px;
-      font-size: .9em;
+    padding: 0px 0px 10px 10px;
+    font-size: .9em;
 }
 
 .image-post-loop {
-  height: 200px;
-  overflow: hidden;
-  position: relative;
-  border:1px solid #e1e1e1;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    border:1px solid #e1e1e1;
 }
 
 .products-cta .front-page-btn a, a:visited {
-  color: #FFF;
+    color: #FFF;
 }
 
 .image-post-loop img {
-   transform: translate(-50%,-50%);
+     transform: translate(-50%,-50%);
     left: 50%;
     max-width: none;
     position: absolute;
@@ -172,7 +171,6 @@ hr.divider::after {
     display:flex;
     flex:0 0 50%;
     order:2;
-
 }
 
 .testimonial-3 {
@@ -193,7 +191,7 @@ hr.divider::after {
   }
 
 .testimonial-copy div {
-  padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .testimonial-copy {

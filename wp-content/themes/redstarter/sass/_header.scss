@@ -12,15 +12,15 @@
 }
 
 .top-border {
-  background-color:#fafafa;
-  border-bottom:1px solid #e1e1e1;
-  height:40px;
-  width:100%
+	  background-color:#fafafa;
+	  border-bottom:1px solid #e1e1e1;
+	  height:40px;
+	  width:100%
 }
 
 .fixed-width-container {
-  width:1024px;
-  margin:0 auto;
+	  width:1024px;
+	  margin:0 auto;
 }
 
 .logo-social {
@@ -29,54 +29,53 @@
 }
 
 .site-branding img {
-  width:300px;
+  	width:300px;
 }
 
 .site-branding {
-  display: flex;
-  padding-top:30px;
-  padding-bottom:30px;
+	  display: flex;
+	  padding-top:30px;
+	  padding-bottom:30px;
 }
 
 
 .nav-search {
-  margin:0;
-  float:right;
+	  margin:0;
+	  float:right;
 }
 
 input[type="search"], input[type="submit"] {
-	position:relative;
- border:none;
- background-color:transparent;
- padding-top:10px;
- outline:none;
-
+		position:relative;
+		border:none;
+		background-color:transparent;
+		padding-top:10px;
+		outline:none;
 }
 
 button, .nav-search-submit {
-  border:none;
-  position:relative;
-  background-color: transparent;
-  width:20px;
+	  border:none;
+	  position:relative;
+	  background-color: transparent;
+	  width:20px;
 }
 
 .fa-search {
-	padding-left: 20px;
-  margin:0;
-  position:relative;
-  right:12px;
-
+		padding-left: 20px;
+	  margin:0;
+	  position:relative;
+	  right:12px;
 }
 
 .social ul {
 		margin:0;
     list-style:none;
 }
+
 .social {
-	padding-left: 20px;
+		padding-left: 20px;
     align-self:center;
 }
 
 .social .fa {
-	padding-left: 20px;
+		padding-left: 20px;
 }
