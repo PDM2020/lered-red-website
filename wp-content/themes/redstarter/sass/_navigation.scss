@@ -1,7 +1,9 @@
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-
+a, a:visited {
+    color: #db272a;
+}
 
 .btn, button, input[type=button], input[type=reset],  input[type=submit] {
     border: none;
@@ -31,7 +33,7 @@ p .read-more:last-child {
 	color:#db272a;
 	display:inline-block;
 	font-weight:700;
-	margin: 20px 0 50px 0;
+	margin: 3em 0 1em 0;
 
 }
 

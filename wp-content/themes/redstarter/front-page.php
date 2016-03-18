@@ -36,7 +36,7 @@ get_header(); ?>
 			</div>
 
 			<div class="products-cta"><!-- products cta button -->
-				<p>All our products are made fresh daily from locally-sourced ingredients. Our menu is updated frequently. <button class="front-page-btn"><a href="/products/">See Our Products</a></button></p>
+				<p><span>All our products are made fresh daily from locally-sourced ingredients. Our menu is updated frequently.</span><button class="front-page-btn"><a href="/products/">See Our Products</a></button></p>
 			</div>
 
 			<div class="latest-news-posts">
