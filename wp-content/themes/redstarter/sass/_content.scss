@@ -34,49 +34,45 @@
   // contact form 7
 
   .wpcf7-form .contact-page-btn input[type="submit"] {
-    padding:.75em 2em .75em 2em;
-    background-color:#222;
-    border-radius: 3px;
-    color:#FFF;
-    text-decoration:none;
-    width:180px;
-    text-align: center;
+	    padding:.75em 2em .75em 2em;
+	    background-color:#222;
+	    border-radius: 3px;
+	    color:#FFF;
+	    text-decoration:none;
+	    width:120px;
+	    text-align: center;
   }
 
   .name-email {
-    display:flex;
+    	display:flex;
   }
 
   .name-email div {
-    flex:0 0 50%;
+    	flex:0 0 50%;
   }
 
   .wpcf7-form div p label {
-  font-weight:700;
-  }
-
-  .front-page-btn {
-    width: 180px;
-    text-align:center;
-    color: #FFF;
+		  font-weight:700;
+			color:#808080;
   }
 
   .required {
-    color:red;
-    font-size: 16px;
-    font-weight:700;
+	    color:red;
+	    font-size: 16px;
+	    font-weight:700;
   }
 
-  input[type="text"],
-  input[type="email"],
+  .wpcf7 input[type="text"],
+  .wpcf7 input[type="email"],
   .wpcf7 textarea {
       background-color: #fafafa;
   		padding:12px;
+			margin: 4px 0 8px -5px;
       color: #666;
       font-size:1em;
       outline:none;
       border:1px solid #e1e1e1;
-        width: 100%;
+      width: 100%;
   }
 
   // products page
@@ -85,7 +81,7 @@
       width:75%
     }
 
-    .lrb-cat-loop-prod {
+.lrb-cat-loop-prod {
         align-items:center;
         flex-direction:column;
         padding: 20px 10px 10px 10px;
@@ -96,14 +92,15 @@
 .lrb-cat-loop-prod a, a:visited {
         text-decoration:none;
   }
-  .lrb-cat-loop-prod a:hover {
+
+.lrb-cat-loop-prod a:hover {
         text-decoration:underline;
   }
 
-    .lrb-cat-loop-prod img {
+.lrb-cat-loop-prod img {
         width: 120px;
         height: 83px;
-    }
+}
 
   // about us page-links
 
@@ -134,7 +131,6 @@
 
 .align-title-center {
     	text-align:center;
-      padding-top: 20px;
 }
 
 .span-two-col {

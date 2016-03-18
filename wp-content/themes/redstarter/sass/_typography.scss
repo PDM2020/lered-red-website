@@ -3,7 +3,6 @@
 --------------------------------------------------------------*/
 /* base font size */
 
-html { font-size: 16px; }
 
 body,
 button,
@@ -21,14 +20,24 @@ h1 {
 	text-transform:uppercase;
 }
 
-h2, .entry-title a:visited, h2, .entry-title a {
-	color:#db272a;
-	font-size:1.4em;
-	text-decoration:none;
-}
 h2, .entry-title a:hover {
 	color:#222222;
+	text-decoration:underline;
 }
+
+h2, .entry-title a:visited, h2, .entry-title a {
+	color:#db272a;
+
+	text-decoration:none;
+}
+
+
+
+h2 {
+	font-size:1.8em;
+	font-color:#222;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
 	font-family:'Overlock',serif;

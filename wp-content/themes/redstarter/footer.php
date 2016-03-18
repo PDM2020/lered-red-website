@@ -25,7 +25,7 @@
 								</div><!-- footer-contact -->
 
 								<div class="footer-logo">
-									<img src="<?php bloginfo('template_directory'); ?>/images/lrb-logo-white.svg"/>
+									<img src="<?php echo get_template_directory_uri() ?>/images/lrb-logo-white.svg"/>
 								</div><!-- footer-logo -->
 
 								<div class="footer-hours">

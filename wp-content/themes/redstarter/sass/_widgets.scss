@@ -67,15 +67,17 @@ text-decoration: none;
 
 .widget-area, span, p  {
  margin:.25em;
+ color:#222;
 }
 
 .widget-title {
 	text-transform: uppercase;
 	line-height: 1.25;
+	font-size: 1.2em;
 }
 
 .widget {
-margin: 0 0 $base__space-unit;
+margin: 0 0 1em;
 
 	/* Make sure select elements fit in widgets. */
 	select {
